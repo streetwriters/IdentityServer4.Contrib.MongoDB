@@ -3,16 +3,15 @@
   <PropertyGroup>
     <Description>MongoDB persistence layer for IdentityServer4</Description>
     <VersionPrefix>5.0.0</VersionPrefix>
-    <Authors>Diogo Damiani</Authors>
-    <Authors>Abdullah Atta</Authors>
+    <Authors>Diogo Damiani;Abdullah Atta</Authors>
     <TargetFrameworks>net9.0</TargetFrameworks>
-    <AssemblyName>IdentityServer4.Contrib.MongoDB</AssemblyName>
-    <PackageId>IdentityServer4.Contrib.MongoDB</PackageId>
+    <AssemblyName>Streetwriters.IdentityServer4.Contrib.MongoDB</AssemblyName>
+    <PackageId>Streetwriters.IdentityServer4.Contrib.MongoDB</PackageId>
     <PackageTags>OAuth2;OAuth 2.0;OpenID Connect;Security;Identity;IdentityServer;MongoDB</PackageTags>
-    <PackageIconUrl>
-      https://identityserver.github.io/Documentation/assets/images/icons/IDserver_icon128.jpg</PackageIconUrl>
+    <PackageIcon>assets/images/icons/IDserver_icon128.jpg</PackageIcon>
     <PackageProjectUrl>https://github.com/streetwriters/IdentityServer4.Contrib.MongoDB</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/streetwriters/IdentityServer4.Contrib.MongoDB/LICENSE</PackageLicenseUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
@@ -30,6 +29,9 @@
     <PackageReference Include="AutoMapper" Version="13.0.1" />
     <PackageReference Include="IdentityServer4" Version="4.1.2" />
     <PackageReference Include="MongoDB.Driver" Version="3.0.0" />
+    <None Include="assets/images/icons/IDserver_icon128.jpg" Pack="true"
+      PackagePath="assets/images/icons/" />
+    <None Include="../../README.md" Pack="true" PackagePath="" />
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net462' ">
